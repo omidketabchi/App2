@@ -23,6 +23,7 @@ import java.util.List;
 
 public class AlibabaBusInformationActivity extends AppCompatActivity {
 
+
     ImageView imgBack;
     TextView txtTitle;
     TextView txtDate;
