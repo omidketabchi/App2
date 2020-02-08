@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SampleProject.WidgetActivities.BottomAppBarActivity">
+
+    <!--    As shown above, the parent ViewGroup of a BottomAppBar should
+    ideally be a CoordinatorLayout. This allows for full customization of
+    scrolling and FAB anchoring behaviors.-->
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/btm_bottomAppBar_bottomAppBar"
+        style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:backgroundTint="@color/colorPrimaryDarkG" />
+
+    <!--    app:navigationIcon="@drawable/ic_share"-->
+    <!--    app:fabAlignmentMode="end"-->
+    <!--    app:fabCradleRoundedCornerRadius="150dp"-->
+    <!--    app:fabCradleVerticalOffset="10dp"-->
+    <!--    app:fabCradleMargin="124dp"-->
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_bottomAppBar_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_home_menu"
+        app:backgroundTint="@color/colorPrimaryDarkG"
+        app:fabSize="normal"
+        app:layout_anchor="@id/btm_bottomAppBar_bottomAppBar" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGray200"
+    android:orientation="vertical"
+    tools:context=".Alibaba.AlibabaDetailActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tlb_alibabaDetail_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryAb"
+        android:elevation="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_alibabaDetail_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="8dp"
+                android:src="@drawable/ic_arrow_forward_white_24dp" />
+
+            <TextView
+                android:id="@+id/txt_alibabaDetail_source"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="32dp"
+                android:layout_toLeftOf="@+id/img_alibabaDetail_back"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"
+                tools:text="اصفهان" />
+
+            <ImageView
+                android:id="@+id/img_alibabaDetail_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_toLeftOf="@+id/txt_alibabaDetail_source"
+                android:src="@drawable/ic_airplanemode_active_white_24dp" />
+
+            <TextView
+                android:id="@+id/txt_alibabaDetail_destination"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/img_alibabaDetail_icon"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"
+                tools:text="شیراز" />
+
+            <TextView
+                android:id="@+id/txt_alibabaDetail_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_alibabaDetail_icon"
+                android:layout_alignRight="@+id/txt_alibabaDetail_source"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp"
+                tools:text="۱۲ فروردین ۱۳۹۸" />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_alibabaDetail_tickets"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tlb_alibabaDetail_toolbar" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:elevation="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/img_alibabaDetail_sort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_sort_black_24dp" />
+
+            <TextView
+                android:id="@+id/txt_alibabaDetail_sort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:layout_toLeftOf="@+id/img_alibabaDetail_sort"
+                android:text="ترتیب"
+                android:textColor="@color/colorGray700" />
+
+            <ImageView
+                android:id="@+id/img_alibabaDetail_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:layout_toLeftOf="@+id/txt_alibabaDetail_sort"
+                android:src="@drawable/ic_filter_list_black_24dp" />
+
+            <TextView
+                android:id="@+id/txt_alibabaDetail_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:layout_toLeftOf="@+id/img_alibabaDetail_filter"
+                android:text="فیلتر"
+                android:textColor="@color/colorGray700" />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

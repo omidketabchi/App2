@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGray200"
+    tools:context=".Alibaba.AlibabaBusInformationActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tlb_busInfo_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryAb"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_busInfo_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/ic_arrow_forward_white_24dp" />
+
+
+            <TextView
+                android:id="@+id/txt_busInfo_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="4dp"
+                android:layout_toLeftOf="@+id/img_busInfo_back"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"
+                tools:text="تهران - مشهد" />
+
+            <TextView
+                android:id="@+id/txt_busInfo_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_busInfo_title"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="4dp"
+                android:layout_toLeftOf="@+id/img_busInfo_back"
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp"
+                tools:text="16 فروردین 98" />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/txt_busInfo_busInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tlb_busInfo_toolbar"
+        android:layout_alignParentRight="true"
+        android:layout_margin="8dp"
+        android:text="اطلاعات اتوبوس"
+        android:textSize="18sp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_busInfo_cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_busInfo_busInfo">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/txt_busInfo_source"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textSize="18sp"
+                tools:text="پایانه کاوه اصفهان" />
+
+            <TextView
+                android:id="@+id/txt_busInfo_typeTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_busInfo_source"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="8dp"
+                android:text="نوع اتوبوس:"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txt_busInfo_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_busInfo_source"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="16dp"
+                android:layout_toLeftOf="@+id/txt_busInfo_typeTitle"
+                android:textSize="18sp"
+                tools:text="ماهان VIP" />
+
+            <TextView
+                android:id="@+id/txt_busInfo_timeTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_busInfo_type"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="8dp"
+                android:text="ساعت حرکت:"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txt_busInfo_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_busInfo_type"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="16dp"
+                android:layout_toLeftOf="@+id/txt_busInfo_timeTitle"
+                android:textColor="@color/colorAccentAb"
+                android:textSize="18sp"
+                tools:text="12:45" />
+
+            <TextView
+                android:id="@+id/txt_busInfo_priceTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_busInfo_time"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="8dp"
+                android:text="قیمت:"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txt_busInfo_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_busInfo_time"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="16dp"
+                android:layout_toLeftOf="@+id/txt_busInfo_priceTitle"
+                android:textColor="@color/colorAccentAb"
+                android:textSize="18sp"
+                tools:text="123,456 ریال" />
+
+            <View
+                android:id="@+id/vw_busInfo_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/txt_busInfo_price"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/colorGray200" />
+
+            <TextView
+                android:id="@+id/txt_busInfo_sourceTerminal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vw_busInfo_line"
+                android:layout_alignParentRight="true"
+                android:layout_margin="16dp"
+                android:textSize="18sp"
+                tools:text="تهران پایانه بیهقی" />
+
+            <TextView
+                android:id="@+id/txt_busInfo_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_below="@+id/txt_busInfo_sourceTerminal"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="-2dp"
+                android:layout_marginRight="16dp"
+                android:textSize="18sp"
+                tools:text="439 کیلومتر" />
+
+            <TextView
+                android:id="@+id/txt_busInfo_destinationTerminal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_busInfo_distance"
+                android:layout_alignParentRight="true"
+                android:layout_margin="16dp"
+                android:textSize="18sp"
+                tools:text="اصفهان کاوه" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/txt_busInfo_penaltyRuleTile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cv_busInfo_cardView"
+        android:layout_alignParentRight="true"
+        android:layout_margin="8dp"
+        android:text="قوانین استرداد" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_busInfo_penaltyList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_busInfo_penaltyRuleTile" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:cardElevation="8dp">
+
+        <Button
+            android:id="@+id/btn_busInfo_chooseChair"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/btn_style"
+            android:padding="15dp"
+            android:text="انتخاب صندلی"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp" />
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChairSelectionActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tlb_chairSelection_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDarkAb">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img_chairSelection_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/ic_arrow_forward_white_24dp" />
+
+            <TextView
+                android:id="@+id/txt_chairSelection_toolbarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:layout_toLeftOf="@+id/img_chairSelection_back"
+                android:text="انتخاب صندلی"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.shuhart.stepview.StepView
+        android:id="@+id/sv_chairSelection_stepView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tlb_chairSelection_toolbar"
+        android:layoutDirection="rtl"
+        android:padding="16dp"
+        app:sv_animationType="All"
+        app:sv_doneCircleColor="@color/colorAccentAb"
+        app:sv_doneCircleRadius="12dp"
+        app:sv_doneStepLineColor="@color/colorAccentAb"
+        app:sv_doneStepMarkColor="@color/colorWhite"
+        app:sv_nextStepLineColor="@color/colorGray200"
+        app:sv_nextTextColor="@color/colorBlack"
+        app:sv_selectedCircleColor="@color/colorAccentAb"
+        app:sv_selectedCircleRadius="12dp"
+        app:sv_selectedStepNumberColor="@color/colorWhite"
+        app:sv_selectedTextColor="@color/colorAccentAb"
+        app:sv_stepLineWidth="1dp"
+        app:sv_stepNumberTextSize="12sp"
+        app:sv_stepPadding="4dp"
+        app:sv_stepViewStyle="@style/StepView"
+        app:sv_typeface="@font/font" />
+
+    <FrameLayout
+        android:id="@+id/frm_chairSelection_fragments"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/sv_chairSelection_stepView"
+        android:layout_marginBottom="100dp">
+
+    </FrameLayout>
+
+</RelativeLayout>

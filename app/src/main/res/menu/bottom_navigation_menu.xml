@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/btm_bottomNavigation_item1"
+        android:tooltipText="text"
+        android:icon="@drawable/ic_home_menu"
+        android:title="Home"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/btm_bottomNavigation_item2"
+        android:tooltipText="text"
+        android:icon="@drawable/ic_share"
+        android:title="Share"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/btm_bottomNavigation_item3"
+        android:icon="@drawable/ic_hamber_menu"
+        android:title="Menu"
+        android:tooltipText="text"
+        app:showAsAction="always" />
+
+</menu>

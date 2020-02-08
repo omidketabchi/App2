@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    app:cardBackgroundColor="@color/colorPink"
+    android:foreground="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txt_list_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="30sp"
+            tools:text="Title" />
+
+        <TextView
+            android:id="@+id/txt_list_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_list_title"
+            android:layout_margin="8dp"
+            tools:text="Description" />
+
+        <ImageView
+            android:id="@+id/img_list_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_list_description"
+            android:layout_margin="8dp"
+            app:srcCompat="@drawable/ic_alarm_green" />
+
+        <TextView
+            android:id="@+id/txt_list_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_list_description"
+            android:layout_margin="8dp"
+
+            android:layout_toRightOf="@id/img_list_time"
+            android:textColor="@color/colorBlack"
+            tools:text="test" />
+
+        <ImageView
+            android:id="@+id/img_list_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_list_description"
+            android:layout_alignParentRight="true"
+            android:layout_margin="8dp"
+            app:srcCompat="@drawable/ic_edit_green" />
+
+        <ImageView
+            android:id="@+id/img_list_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_list_description"
+            android:layout_margin="8dp"
+            android:layout_toLeftOf="@id/img_list_edit"
+            app:srcCompat="@drawable/ic_delete_green" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryAb">
+
+    <ImageView
+        android:id="@+id/img_splash_left"
+        android:layout_width="300dp"
+        android:layout_height="500dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/left" />
+
+    <ImageView
+        android:id="@+id/img_splash_right"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/right" />
+
+    <ImageView
+        android:id="@+id/img_splash_logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/txt_splash_morning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_splash_logo"
+        android:layout_centerHorizontal="true"
+        android:text="صبح بخیر"
+        android:textColor="@color/colorBlack"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txt_splash_appIntro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_splash_morning"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:text="علی بابا همسفر حرفه ای ها"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/txt_splash_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_splash_appIntro"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:text="7.0.0"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_splash_error_connection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="خطا در اتصال اینترنت"
+            android:textColor="@color/colorWhite" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/ic_refresh_white_24dp" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

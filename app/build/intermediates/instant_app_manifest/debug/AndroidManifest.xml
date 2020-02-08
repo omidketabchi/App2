@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.app2"
+    android:targetSandboxVersion="2"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="23"
+        android:targetSdkVersion="28" />
+
+    <uses-permission android:name="android.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.microphone"
+        android:required="false" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true" />
+
+    <uses-feature
+        android:name="android.hardware.location.network"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="false" />
+
+    <application
+        android:name="com.example.app2.SampleProject.G"
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true" >
+        <activity android:name="com.example.app2.Alibaba.HotelMapActivity" />
+        <activity android:name="com.example.app2.ChairSelectionActivity" />
+        <activity android:name="com.example.app2.Alibaba.AlibabaBusInformationActivity" />
+        <activity android:name="com.example.app2.Alibaba.AlibabaTrainInformationActivity" />
+        <activity android:name="com.example.app2.Alibaba.EditProfileActivity" />
+        <activity android:name="com.example.app2.Alibaba.ProfileActivity" />
+        <activity android:name="com.example.app2.SampleProject.WidgetActivities.ScrollingActivity" />
+        <activity android:name="com.example.app2.SampleProject.WidgetActivities.BottomSheetViewActivity" />
+        <activity android:name="com.example.app2.SampleProject.WidgetActivities.BottomNavigationViewActivity" />
+        <activity android:name="com.example.app2.SampleProject.WidgetActivities.BottomAppBarActivity" />
+        <activity android:name="com.example.app2.SampleProject.WidgetActivities.TextInputLayoutActivity" />
+        <activity android:name="com.example.app2.SampleProject.WidgetActivities.TestRadioButtonActivity" />
+        <activity android:name="com.example.app2.SampleProject.WidgetActivities.TestEditTextActivity" />
+        <activity android:name="com.example.app2.SampleProject.WidgetTestActivity" />
+        <activity android:name="com.example.app2.Alibaba.AlibabaInformationActivity" />
+        <activity android:name="com.example.app2.Alibaba.AlibabaDetailActivity" />
+        <activity android:name="com.example.app2.Alibaba.CitiesActivity" />
+        <activity android:name="com.example.app2.Alibaba.AlibabaMainActivity" />
+        <activity android:name="com.example.app2.SampleProject.CallBackActivity" />
+        <activity android:name="com.example.app2.SampleProject.LifeCycleActivity" />
+        <activity android:name="com.example.app2.SampleProject.SmsVerificationActivity" />
+        <activity android:name="com.example.app2.CafeBazar.Cafe_MainActivity" />
+        <activity android:name="com.example.app2.SampleProject.SwipRefreshActivity" />
+        <activity android:name="com.example.app2.SampleProject.StartActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.app2.SampleProject.TimerActivity" />
+        <activity android:name="com.example.app2.SampleProject.HiddenIconActivity" />
+        <activity android:name="com.example.app2.SampleProject.DownloaderActivity" />
+        <activity android:name="com.example.app2.SampleProject.RecorderActivity" />
+        <activity
+            android:name="com.example.app2.SampleProject.TestNotificationViewActivity"
+            android:parentActivityName="com.example.app2.SampleProject.TestNotificationActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SampleProject.TestNotificationActivity" />
+        </activity>
+        <activity android:name="com.example.app2.SampleProject.NotificationSample.NotificationMainActivity" />
+        <activity android:name="com.example.app2.SampleProject.NotificationSample.NotificationDetailActivity" />
+        <activity android:name="com.example.app2.SampleProject.TestNotificationActivity" />
+        <activity android:name="com.example.app2.SampleProject.StartedServiceActivity" />
+        <activity android:name="com.example.app2.SampleProject.TestServicesActivity" />
+        <activity android:name="com.example.app2.SampleProject.ServiceActivity" />
+        <activity android:name="com.example.app2.SampleProject.MusicActivity" />
+        <activity android:name="com.example.app2.SampleProject.PlayerActivity" />
+        <activity android:name="com.example.app2.SampleProject.AnimationActivity" />
+        <activity android:name="com.example.app2.SampleProject.LoginActivity2" />
+        <activity android:name="com.example.app2.SampleProject.SensorActivity" />
+        <activity
+            android:name="com.example.app2.SampleProject.ActivitySampleNavigation"
+            android:label="@string/title_activity_sample_navigation"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.example.app2.SampleProject.KeshoActivity" />
+        <activity android:name="com.example.app2.SampleProject.MaterialActivity" />
+        <activity android:name="com.example.app2.SampleProject.EmailActivity" />
+        <activity android:name="com.example.app2.SampleProject.SmsActivity" />
+        <activity android:name="com.example.app2.SampleProject.CameraActivity" />
+        <activity android:name="com.example.app2.SampleProject.PermissionActivity" />
+        <activity android:name="com.example.app2.SampleProject.ActivityTabLayout" />
+        <activity android:name="com.example.app2.SampleProject.SampleFragment" />
+        <activity android:name="com.example.app2.SampleProject.Thread.AsyncActivity" />
+        <activity android:name="com.example.app2.SampleProject.Thread.ThreadActivity" />
+        <activity android:name="com.example.app2.SampleProject.DetailActivity" />
+        <activity android:name="com.example.app2.SampleProject.Server.ValyActivity" />
+        <activity android:name="com.example.app2.SampleProject.Toolbar.ToolbarActivity" />
+        <activity android:name="com.example.app2.SampleProject.AlarmActivity" />
+        <activity android:name="com.example.app2.SampleProject.ListActivity" />
+        <activity android:name="com.example.app2.SampleProject.CommentActivity" />
+        <activity android:name="com.example.app2.SampleProject.LoginActivity" />
+        <activity android:name="com.example.app2.SampleProject.SplashActivity" />
+        <activity android:name="com.example.app2.SampleProject.MainActivity" />
+
+        <receiver android:name="com.example.app2.SampleProject.MyBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+                <action android:name="android.intent.action.AIRPLANE_MODE" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.example.app2.SampleProject.SmsReceiver" >
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.example.app2.SampleProject.CallReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.example.app2.Alibaba.Receiver.CheckInternetReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.example.app2.SampleProject.Service.TestService" />
+        <service android:name="com.example.app2.SampleProject.Service.MyService" />
+        <service android:name="com.example.app2.SampleProject.Service.TestService" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.app2.provider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <provider
+            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+            android:authorities="com.example.app2.lifecycle-process"
+            android:exported="false"
+            android:multiprocess="true" />
+    </application>
+
+</manifest>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cv_showHotelList_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="4dp"
+    android:clickable="true"
+    android:foreground="?attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_showHotelList_image"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:id="@+id/txt_showHotelList_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/img_showHotelList_image"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/colorWhite"
+            tools:text="هتل پارسیان" />
+
+        <TextView
+            android:id="@+id/txt_showHotelList_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_showHotelList_image"
+            android:layout_alignParentRight="true"
+            android:layout_margin="8dp"
+            tools:text="1,133,234 ریال" />
+
+        <TextView
+            android:id="@+id/txt_showHotelList_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_showHotelList_price"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="اولین تاریخ قابل رزرو:1398/03/04" />
+
+        <androidx.appcompat.widget.AppCompatRatingBar
+            android:id="@+id/rt_showHotelList_ratingBar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorStar"
+            android:numStars="5"
+            android:rating="3.5"
+            android:layout_alignBottom="@+id/img_showHotelList_image"
+            android:layout_margin="8dp"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <font
+        android:font="@font/bhoma"
+        android:fontStyle="normal"
+        android:fontWeight="400" />
+
+    <!--for api's <= 26 we should add lines below for add custom font-->
+    <font
+        app:font="@font/bhoma"
+        app:fontStyle="normal"
+        app:fontWeight="400" />
+</font-family>

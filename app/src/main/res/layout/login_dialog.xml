@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginBottom="16dp"
+        android:background="@color/colorPrimaryAb"
+        android:gravity="center"
+        android:text="لطفا وارد حساب کابری خود شوید"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/edt_alibabaLoginDialog_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:drawableRight="@drawable/ic_email_black_24dp"
+        android:gravity="center"
+        android:hint="پست الکترونیک" />
+
+    <EditText
+        android:id="@+id/edt_alibabaLoginDialog_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:drawableRight="@drawable/ic_vpn_key_black_24dp"
+        android:gravity="center"
+        android:hint="رمز عبور"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/txt_alibabaLoginDialog_forgetPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:drawableRight="@drawable/ic_vpn_key_black_24dp"
+        android:text="فراموشی رمز عبور" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+
+        <Button
+            android:id="@+id/btn_alibabaLoginDialog_signup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:layout_weight=".5"
+            android:background="@drawable/btn_signup_style"
+            android:padding="15dp"
+            android:text="ثبت نام"
+            android:textColor="@color/colorWhite" />
+
+        <Button
+            android:id="@+id/btn_alibabaLoginDialog_login"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_weight=".5"
+            android:background="@drawable/btn_signin_style"
+            android:padding="15dp"
+            android:text="ورود"
+            android:textColor="@color/colorWhite" />
+
+    </LinearLayout>
+
+</LinearLayout>

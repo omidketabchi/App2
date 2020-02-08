@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rel_main_parentAllView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CafeBazar.Cafe_MainActivity">
+    <!--elevation baes mishavad layeha roo bioftad-->
+
+    <com.ss.bottomnavigation.BottomNavigation
+        android:id="@+id/bnv_main_bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorWhite"
+        app:mode="phone"
+        android:elevation="4dp">
+
+        <com.ss.bottomnavigation.TabItem
+            android:id="@+id/tab_apps"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:tab_icon="@drawable/ic_download_menu"
+            app:tab_text="برنامه ها"
+            app:tab_text_color="@color/colorPrimary" />
+
+        <com.ss.bottomnavigation.TabItem
+            android:id="@+id/tab_search"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:tab_icon="@drawable/ic_search_menu"
+            app:tab_text="جستجو"
+            app:tab_text_color="@color/colorPrimary" />
+
+        <com.ss.bottomnavigation.TabItem
+            android:id="@+id/tab_cats"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:tab_icon="@drawable/ic_hamber_menu"
+            app:tab_text="دسته ها"
+            app:tab_text_color="@color/colorPrimary" />
+
+        <com.ss.bottomnavigation.TabItem
+            android:id="@+id/tab_bests"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:tab_icon="@drawable/ic_schdule_menu"
+            app:tab_text="برترین ها"
+            app:tab_text_color="@color/colorPrimary" />
+
+        <com.ss.bottomnavigation.TabItem
+            android:id="@+id/tab_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:tab_icon="@drawable/ic_home_menu"
+            app:tab_text="صغحه اصلی"
+            app:tab_text_color="@color/colorPrimary" />
+    </com.ss.bottomnavigation.BottomNavigation>
+
+    <RelativeLayout
+        android:id="@+id/rel_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bnv_main_bottom_navigation"
+        android:layout_below="@+id/rel_cb_main_toolbar">
+
+    </RelativeLayout>
+
+</RelativeLayout>

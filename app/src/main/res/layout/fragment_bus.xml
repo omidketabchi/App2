@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <!--    for remove focus in edit text should write two lines above-->
+
+    <RadioGroup
+        android:id="@+id/rg_fragmentBus_radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rd_fragmentBus_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:text="دو طرفه" />
+
+        <RadioButton
+            android:id="@+id/rd_fragmentBus_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:checked="true"
+            android:text="یک طرفه" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txt_fragmentBus_source"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rg_fragmentBus_radioGroup"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/transparent"
+        android:drawableRight="@drawable/ic_directions_bus_black_24dp"
+        android:gravity="center"
+        android:hint="شهر مبدا" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/txt_fragmentBus_source"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:background="@color/colorGray200" />
+
+    <TextView
+        android:id="@+id/txt_fragmentBus_destination"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_fragmentBus_source"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/transparent"
+        android:drawableRight="@drawable/ic_directions_bus_black_24dp"
+        android:gravity="center"
+        android:hint="شهر مقصد" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/txt_fragmentBus_destination"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:background="@color/colorGray200" />
+
+    <TextView
+        android:id="@+id/txt_fragmentBus_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_fragmentBus_destination"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/transparent"
+        android:drawableRight="@drawable/ic_date_range_black_24dp"
+        android:gravity="center"
+        android:hint="تاریخ رفت" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/txt_fragmentBus_date"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:background="@color/colorGray200" />
+
+    <Button
+        android:id="@+id/btn_fragmentBus_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:background="@drawable/btn_style"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="جستجو"
+        android:textColor="@color/colorWhite"
+        android:textSize="18dp" />
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!--    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textViewStyle">@style/setEdtFont</item>
+        <item name="android:buttonStyle">@style/setBtnFont</item>
+        <item name="android:itemBackground">@color/colorWhite</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="setEdtFont" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/bhoma</item>
+    </style>
+
+    <style name="setBtnFont" parent="android:Widget.Button">
+        <item name="android:fontFamily">@font/bhoma</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="omidStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">#FFCFBE27</item>
+        <item name="android:textColorPrimary">#F44336</item>
+        <item name="android:background">#00BCD4</item>
+    </style>
+
+</resources>

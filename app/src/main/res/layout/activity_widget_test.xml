@@ -1,0 +1,116 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_widgetTest_editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/btn_style"
+                android:padding="15dp"
+                android:text="Edit Text"
+                android:textColor="@color/colorWhite" />
+
+            <Button
+                android:id="@+id/btn_widgetTest_radioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/btn_style"
+                android:padding="15dp"
+                android:text="Radio Button"
+                android:textColor="@color/colorWhite" />
+
+            <Button
+                android:id="@+id/btn_widgetTest_textInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/btn_style"
+                android:padding="15dp"
+                android:text="Text input layout"
+                android:textColor="@color/colorWhite" />
+
+            <Button
+                android:id="@+id/btn_widgetTest_bottomAppBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/btn_style"
+                android:padding="15dp"
+                android:text="Text input layout"
+                android:textColor="@color/colorWhite" />
+
+            <Button
+                android:id="@+id/btn_widgetTest_bottomNavigationView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/btn_style"
+                android:padding="15dp"
+                android:text="Bottom Navigation View"
+                android:textColor="@color/colorWhite" />
+
+            <Button
+                android:id="@+id/btn_widgetTest_bottomSheetView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/btn_style"
+                android:padding="15dp"
+                android:text="Bottom Sheet View"
+                android:textColor="@color/colorWhite" />
+
+            <Button
+                android:id="@+id/btn_widgetTest_collapsingToolBarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/btn_style"
+                android:padding="15dp"
+                android:text="Collapsing ToolBar Layout "
+                android:textColor="@color/colorWhite" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+
+
+
+

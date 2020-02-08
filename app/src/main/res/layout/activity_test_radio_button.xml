@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SampleProject.WidgetActivities.TestRadioButtonActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_testRadioButton_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_testRadioButton_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="8dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <EditText
+            android:id="@+id/edt_testRadioButton_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_toLeftOf="@+id/img_testRadioButton_image"
+            android:background="@drawable/edt_style"
+            android:gravity="right|top"
+            android:hint="@string/username"
+            android:padding="15dp" />
+
+        <EditText
+            android:id="@+id/edt_testRadioButton_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edt_testRadioButton_username"
+            android:layout_margin="8dp"
+            android:layout_toLeftOf="@+id/img_testRadioButton_image"
+            android:background="@drawable/edt_style"
+            android:gravity="right|top"
+            android:hint="@string/password"
+            android:padding="15dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_testRadioButton_1"
+        android:gravity="right"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/testRadioButton_radioGroup1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="مدرک" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="مدرک" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="مدرک" />
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/testRadioButton_radioGroup2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="مدرک" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="مدرک" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="مدرک" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+</RelativeLayout>

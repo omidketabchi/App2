@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_alibabaDetailItem_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackground">
+
+        <TextView
+            android:id="@+id/txt_alibabaDetailItem_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:textSize="18sp"
+            tools:text="تابان" />
+
+        <TextView
+            android:id="@+id/txt_alibabaDetailItem_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_alibabaDetailItem_company"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            android:textColor="@color/colorAccentAb"
+            android:textSize="16sp"
+            tools:text="12:45" />
+
+        <TextView
+            android:id="@+id/txt_alibabaDetailItem_kind1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/txt_alibaba_detail_item_style_kind1"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"
+            tools:text="چارتر" />
+
+        <TextView
+            android:id="@+id/txt_alibabaDetailItem_kind2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toRightOf="@+id/txt_alibabaDetailItem_kind1"
+            android:background="@drawable/txt_alibaba_detail_item_style_kind2"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"
+            tools:text="اکونومی" />
+
+        <TextView
+            android:id="@+id/txt_alibabaDetailItem_capacity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_alibabaDetailItem_kind2"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            tools:text="8 نفر" />
+
+        <TextView
+            android:id="@+id/txt_alibabaDetailItem_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_alibabaDetailItem_capacity"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:textColor="@color/colorAccentAb"
+            android:textSize="18sp"
+            tools:text="2,480,000 ریال" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

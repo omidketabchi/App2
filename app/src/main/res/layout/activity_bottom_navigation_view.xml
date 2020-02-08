@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SampleProject.WidgetActivities.BottomNavigationViewActivity">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/btm_bottomNavigationView_parent"
+        style="@style/Widget.Design.BottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="?android:attr/windowBackground"
+        android:elevation="16dp"
+        app:itemIconTint="@drawable/btm_bottom_navigation_view_style"
+        app:itemTextColor="@drawable/btm_bottom_navigation_view_style"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_navigation_view_menu" />
+
+    <!--    app:itemIconSize="35dp"-->
+
+</FrameLayout>
