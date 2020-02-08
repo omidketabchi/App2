@@ -37,7 +37,7 @@ public class AlibabaBusInformationActivity extends AppCompatActivity {
     RecyclerView recyclerView;
 
     List<AlibabaChairModel> chairModels;
-
+ 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
